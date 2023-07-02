@@ -1,6 +1,7 @@
 # Frontend Mentor - Product preview card component
 
 Design preview for the Product preview card component coding challenge<img src="./design/desktop-preview.jpg" width="600px">
+# <a href="https://bowen-wei.github.io/product-preview-card-component/">Live Preview</a>
 
 ## Welcome! 👋
 
