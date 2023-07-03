@@ -109,13 +109,9 @@ body {
     }
 
     .profile-container {
-        width: 20rem;
+        width: 19rem;
     }
-
-    .presonnal-info {
-        margin: 1.5rem;
-    }
-
+    
     .data-container {
         gap: 3rem;
         padding: 1.5rem 0;
