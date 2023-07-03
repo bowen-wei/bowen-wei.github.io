@@ -75,7 +75,7 @@ p {
 a {
     font-size: 0.8rem;
 }
-.info-block h2,h4 {
+.info-block h2,h3 {
     color: var(--dark-blue);
 }
 
