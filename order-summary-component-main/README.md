@@ -1,5 +1,7 @@
 # Frontend Mentor - Order summary card
 
+# <a href="https://bowen-wei.github.io/order-summary-component-main/">Live Preview</a>
+
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
