@@ -1,5 +1,7 @@
 # Frontend Mentor - Profile card component
 
+# <a href="https://bowen-wei.github.io/profile-card-component/">Live Priview</a>
+
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
