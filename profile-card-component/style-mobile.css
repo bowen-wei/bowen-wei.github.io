@@ -24,7 +24,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-position: top -30rem left -13rem, bottom -35rem right -13rem;
+    background-position: top -35rem left -40rem, bottom -32rem right -43rem;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -101,10 +101,23 @@ body {
 
 
 
-@media screen and (max-width: 950px)
+@media screen and (min-width: 950px)
 {
     body {
-        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-        background-position: top -35rem left -40rem, bottom -32rem right -43rem;
+
+        background-position: top -30rem left -13rem, bottom -35rem right -13rem;     
+    }
+
+    .profile-container {
+        width: 20rem;
+    }
+
+    .presonnal-info {
+        margin: 1.5rem;
+    }
+
+    .data-container {
+        gap: 3rem;
+        padding: 1.5rem 0;
     }
 }
