@@ -59,8 +59,10 @@ body {
    /* border: 1px solid green;*/
 }
 
-.info-block h3 {
+.plan-info h3 {
     font-size: 1rem;
+    color: var(--dark-blue);
+    
 }
 
 .info-block p {
