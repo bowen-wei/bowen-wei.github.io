@@ -1,0 +1,110 @@
+/*import google font*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: top -30rem left -13rem, bottom -35rem right -13rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-container {
+    /*border: 1px solid black;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1rem 1rem 0.2rem rgba(0,0,0,0.1);
+
+}
+
+.profile-container {
+    /*border: 1px solid red;*/
+    border-bottom: 1px solid lightgray;
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-photo{
+    z-index: 1;
+    margin-top: 4rem;
+    border-radius: 4rem;
+    border: 0.3rem solid white;
+}
+
+.presonnal-info {
+    margin: 1rem;
+    text-align: center;
+}
+
+.location {
+    line-height: 2;
+}
+
+.name, .numbers {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.age, .location, .data-category {
+    color: var(--Dark-gray);
+}
+
+.location {
+    font-size: 0.8rem;
+}
+
+.data-category {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding: 1rem 0rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+@media screen and (max-width: 950px)
+{
+    body {
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-position: top -35rem left -40rem, bottom -32rem right -43rem;
+    }
+}
