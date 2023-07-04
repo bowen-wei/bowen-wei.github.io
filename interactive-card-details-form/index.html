@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style-mobile.css">
+  <link rel="stylesheet" type="text/css" href="style-desktop.css">
+  
+  <title>Interactive card details form</title>
+
+</head>
+<body>
+  <main>
+    <div class="card-block">
+      <div class="card-back">
+        <p class="CVC-on-card">000</p>
+      </div>
+      <div class="card-front">
+        <img class="card-logo" src="images/card-logo.svg">
+        <p class="card-number-on-card">0000 0000 0000 0000</p>
+        <p class="card-info"><span class="name-on-card">Jane Appleseed</span><span class="exp-date-on-card">00/00</span></p>
+      </div>
+    </div>
+    <div class="form-block">
+      <form action="" method="get" class="card-info-form">
+        <div class="name-section">
+          <label for="name-input">Cardholder Name</label><br>
+          <input type="text" name="name" id="name-input" placeholder=" e.g. Jane Appleseed">
+        </div>
+        <div class="card-number-section">
+          <label for="card-number-input">Card Number</label><br>
+          <input type="text" name="card-number" id="card-number-input" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="exp-date-section">
+          <label id="exp-date">Exp. Date (MM/YY)</label><label id="CVC-label" for="CVC-input">CVC</label><br>
+          <input type="text" name="month" id="month-input" placeholder="MM" aria-labelledby="exp-date" required>
+          <input type="text" name="year" id="year-input" placeholder="YY" aria-labelledby="exp-date" required>         
+          <input type="text" name="CVC" id="CVC-input" placeholder="e.g.123" required>
+        </div>
+      </form>
+    </div>
+    <button id="confirm-btn">Confirm</button>
+  </main>
+</body>
+</html>
