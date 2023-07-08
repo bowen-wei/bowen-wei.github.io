@@ -1,0 +1,76 @@
+@media (width >= 1000px)
+{
+
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 730px;
+        height: 510px;
+        box-shadow: 15px 15px 30px 0px rgba(18, 74, 163, 0.2);
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .result-section {
+        border-radius: none;
+        justify-content: space-around;
+    }
+
+    .result-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .result-section .final-score-section {
+        width: 200px;
+        height: 200px;
+    }
+
+    #final-score {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-top: 40px;
+    }
+
+    .final-score-section .of-100 {
+        font-size: 1rem;
+    }
+
+    .result-section .remark {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .result-section .comment {
+        color: var(--Pale-blue);
+        font-size: 1.1rem;
+    }
+
+    /*--Summary Section--*/
+
+    .summary-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 40px;
+    }
+
+    .summary-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .summary-section .category {
+
+        font-size: 1rem;
+    }
+    .summary-section .category .score-area {
+        right: 20px;
+    }
+
+
+    
+}
