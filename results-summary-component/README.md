@@ -1,5 +1,7 @@
 # Frontend Mentor - Results summary component
 
+# <a href= "https://bowen-wei.github.io/results-summary-component/">Live Preview</a>
+
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
