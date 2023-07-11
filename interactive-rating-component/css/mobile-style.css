@@ -1,0 +1,122 @@
+:root {
+    --Primary-Orange: hsl(25, 97%, 53%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    font-size: 15px;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    background-color: var(--Dark-Blue);
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+main h1 {
+    color: white;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    
+}
+
+main p {
+    color: var(--Light-Grey);
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+main #star-icon {
+    background-color: rgba(255,255,255,0.05);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+#rating-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+main .ratingButton {
+    color: var(--Medium-Grey);
+    display: inline-block;
+    background-color: rgba(255,255,255,0.05);
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+main .ratingButton:hover {
+    background-color: var(--Primary-Orange);
+    color: white;
+    transition: 0.3s;
+}
+
+main .selected {
+    background-color: var(--Light-Grey) !important;
+    color: white;
+}
+
+main #submit-btn {
+    color: white;
+    background-color: var(--Primary-Orange);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 10px;
+}
+
+main #submit-btn:hover {
+    color: var(--Primary-Orange);
+    background-color: white;
+    transition-duration: 0.3s;
+}
+
+/*thanks page begins*/
+
+.thank-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#thank-icon {
+    transform: scale(85%);
+}
+
+#rate-info {
+    color:  #fc7710;
+    background-color: rgba(255,255,255,0.05);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+
+
+}
