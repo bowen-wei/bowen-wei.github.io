@@ -7,7 +7,7 @@ const errorMessages = []
 
 for(let i = 0; i < inputContainers.length; i++){
     let errorMessage = document.createElement("p")
-    errorMessage.innerText = inputAreas[i].placeholder + " can not be empty"
+    
     errorMessage.setAttribute("class","error-message")
     errorMessages[i] = errorMessage
     inputContainers[i].appendChild(errorMessage)
@@ -17,6 +17,7 @@ function checkFormInput(i) {
     let userInput = inputAreas[i].value
     var validRegex = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
     if(userInput.length <= 0){
+        errorMessage.innerText = inputAreas[i].placeholder + " can not be empty"
         errorMessages[i].style.setProperty("display","block")
         inputAreas[i].setAttribute("class","input-error")
         return false
