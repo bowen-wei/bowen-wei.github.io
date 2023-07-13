@@ -18,7 +18,8 @@
 
 
 body {
-    background: linear-gradient(0deg, var(--primary-red), var(--primary-red)), url("../images/bg-intro-mobile.png");
+    background-image: url("../images/bg-intro-mobile.png"), linear-gradient(0deg, var(--primary-red), var(--primary-red));
+    background-blend-mode: overlay;
     background-repeat: repeat-y;
     background-position: top center;
 }
