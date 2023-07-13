@@ -1,0 +1,182 @@
+:root {
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --accent-blue: hsl(248, 32%, 49%);
+    --neutral-dark-blue: hsl(249, 10%, 26%);
+    --neutral-grayish-blue: hsl(246, 25%, 77%);
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--primary-red);
+    background-image: url("/images/bg-intro-mobile.png");
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+
+
+main {
+    margin-left: 6%;
+    margin-right: 6%;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.description-block {
+    padding-top: 80px;
+    color: white;
+    padding-bottom: 65px;
+}
+
+.description-block p {
+    line-height: 1.5;
+    margin-top: 25px;
+    padding: 0 1px;
+}
+
+
+
+/*--form block--*/
+
+.form-block #promotion-info {
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 1rem 4rem;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 2px 0 rgba(0,0,0,0.2);
+}
+
+#sign-up-form {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#sign-up-form input {
+    padding: 1rem 0 1rem 1rem;
+    width: 99%;
+    font-size: 1rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid lightgray;
+    font-weight: 600;
+}
+
+
+#sign-up-form input:focus {
+    border: 1px solid var(--accent-blue);
+}
+
+
+#sign-up-form  .input-error {
+    border: 2px solid var(--primary-red) !important;
+    background-image: url("/images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 2rem center;
+
+}
+
+
+#claim-button {
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: var(--primary-green);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0 !important;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: inset 0 -4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+#claim-button:hover {
+    box-shadow: inset 0 0 0 200px rgba(255,255,255, 0.2);
+}
+
+#policy {
+    color: var(--neutral-grayish-blue);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0.6rem 1rem; 
+}
+#policy a {
+    color: var(--primary-red);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+
+}
+
+.error-message {
+    color: var(--primary-red);
+    margin-top: 0.5rem;
+    font-size: 14px;
+    font-style: italic;
+    display: none;
+
+}
+
+
+.verify-email-block {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+.verify-email-block img {
+    max-height: 120px;
+}
+
+.verify-email-block h2, h3{
+    color: var(--neutral-dark-blue);
+    margin: 1rem;
+}
+
+.verify-email-block p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(100,100,100);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.verify-email-block #email-address {
+    font-weight: bolder;
+    color: var(--accent-blue) ;
+}
+
+.verify-email-block a {
+    text-decoration: none;
+    color: var(--primary-red);
+    font-weight: bolder;
+}
+
+.verify-email-block a:hover {
+    text-decoration: underline;
+}
