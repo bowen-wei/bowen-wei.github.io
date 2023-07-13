@@ -19,7 +19,7 @@
 
 body {
     background-color: var(--primary-red);
-    background-image: url("/images/bg-intro-mobile.png");
+    background-image: url(images/bg-intro-mobile.png);
     background-repeat: repeat-y;
     background-position: top center;
 }
