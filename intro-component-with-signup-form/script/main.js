@@ -17,7 +17,7 @@ function checkFormInput(i) {
     let userInput = inputAreas[i].value
     var validRegex = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
     if(userInput.length <= 0){
-        errorMessage.innerText = inputAreas[i].placeholder + " can not be empty"
+        errorMessages[i].innerText = inputAreas[i].placeholder + " can not be empty"
         errorMessages[i].style.setProperty("display","block")
         inputAreas[i].setAttribute("class","input-error")
         return false
@@ -44,18 +44,6 @@ function checkAllInput() {
         if(checkFormInput(i) == false)
             isValid = false
     }
-
-    /*if(isValid) {
-        let userInfo = {
-            firstName: inputAreas[0].value,
-            lastName: inputAreas[1].value,
-            emailAddress: inputAreas[2].value,
-            password: inputAreas[3].value
-        }
-        const data = JSON.stringify(userInfo);
-        window.alert(data)
-        fs.writeFile("../userInfo.json", data)
-    }*/
     return isValid
 }
 
