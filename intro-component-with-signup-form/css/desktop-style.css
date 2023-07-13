@@ -4,7 +4,8 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        background: linear-gradient(0deg, var(--primary-red), var(--primary-red)),url("../images/bg-intro-desktop.png");
+        background-image: url("../images/bg-intro-desktop.png"), linear-gradient(0deg, var(--primary-red), var(--primary-red));
+        background-blend-mode: overlay;
 
     }
 
