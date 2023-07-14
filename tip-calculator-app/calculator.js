@@ -18,8 +18,14 @@ resetButton.addEventListener("click",resetAll)
 
 function setBill() {
     bill = billInput.value
-    if(billInput == "") {
-        bill = 0
+    if(bill.length == 0 || bill < 0) {
+        bill = -1
+        billInput.classList.add("input-error")
+        document.getElementById("bill-error-message").style.display = "inline"
+    }
+    else {
+        billInput.classList.remove("input-error")
+        document.getElementById("bill-error-message").style.display = "none"
     }
 }
 
@@ -36,8 +42,15 @@ function setTipRate()  {
         tipRate = event.target.innerText.slice(0,-1)
         customTipInput.value = null
     }
-    else{
+    else if(customTipInput.value.length == 0 || customTipInput.value < 0){
+        tipRate = -1
+        customTipInput.classList.add("input-error")
+        document.getElementById("tip-error-message").style.display = "inline"
+    }
+    else {
         tipRate = customTipInput.value
+        customTipInput.classList.remove("input-error")
+        document.getElementById("tip-error-message").style.display = "none"
     }
 }
 
@@ -53,16 +66,27 @@ customTipInput.addEventListener("input", showResult)
 
 
 function setNumberOfPeople() {
-    if(numberOfPeopleInput.value == '') {
-        numberOfPeopleInput.classList.add("zero")
-        document.getElementById("error-message").style.display = "inline"
+    console.log(numberOfPeopleInput.value.length)
+    if(numberOfPeopleInput.value.length == 0 || numberOfPeopleInput.value < 0){
+        numberOfPeopleInput.classList.add("input-error")
+        document.getElementById("people-error-message").innerHTML = "Not valid"
+        document.getElementById("people-error-message").style.display = "inline"
+        numberOfPeople = -1
+    }
+
+    else if(numberOfPeopleInput.value == 0) {
+        numberOfPeopleInput.classList.add("input-error")
+        document.getElementById("people-error-message").innerHTML = "Can't be zero"
+        document.getElementById("people-error-message").style.display = "inline"
         numberOfPeople = 0
     }
 
+
+
     else {
         numberOfPeople = numberOfPeopleInput.value
-        numberOfPeopleInput.classList.remove("zero")
-        document.getElementById("error-message").style.display = "none"
+        numberOfPeopleInput.classList.remove("input-error")
+        document.getElementById("people-error-message").style.display = "none"
 
     }
 }
@@ -94,15 +118,19 @@ function resetAll() {
     tipOutput.innerText = "0.00"
     totalOutput.innerText = "0.00"
     resetButton.classList.remove("clickable")
-    numberOfPeopleInput.classList.remove("zero")
-    document.getElementById("error-message").style.display = "none"
+    billInput.classList.remove("input-error")
+    customTipInput.classList.remove("input-error")
+    numberOfPeopleInput.classList.remove("input-error")
+    document.getElementById("bill-error-message").style.display = "none"
+    document.getElementById("tip-error-message").style.display = "none"
+    document.getElementById("people-error-message").style.display = "none"
 }
 
 
 
 function showResult() {
     resetButton.classList.add("clickable")
-    if(bill != 0 && tipRate != "" && numberOfPeople != 0){
+    if(bill != -1 && tipRate != -1 && numberOfPeople != 0 && numberOfPeople != -1){
         tipOutput.innerText = calTip(bill, tipRate, numberOfPeople)
         totalOutput.innerText = calTotal(bill, tipRate, numberOfPeople)
     }
@@ -111,7 +139,7 @@ function showResult() {
         totalOutput.innerText = "0.00"
     }
 
-    if(bill == 0 && tipRate == "" && numberOfPeople == 0) {
+    if(bill == 0 && tipRate == 0 && numberOfPeople == 0 &&bill != -1 && tipRate != -1 && numberOfPeople != -1) {
         resetButton.classList.remove("clickable")
     }
 

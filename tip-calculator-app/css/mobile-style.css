@@ -80,7 +80,7 @@ main input {
 
 
 
-.zero #number-of-people-input{
+.input-error #number-of-people-input{
     outline: red !important;
 }
 
@@ -139,13 +139,13 @@ span.selected{
     background-position: left 20px center;
 }
 
-.zero, .zero:focus {
+.input-error, .input-error:focus {
     outline: 2px solid orangered !important;
 }
 
-#error-message {
+.error-message {
     display: none;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: orangered;
     float: right;
 

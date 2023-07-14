@@ -19,10 +19,10 @@
   <main class="main-container">
     <section class="input-section">
       <div id="bill-block">
-        <p id="bill-label" class="label">Bill</p>
+        <p id="bill-label" class="label">Bill<span id="bill-error-message" class="error-message">Not valid</span></p>
         <input id="bill-input" name="bill-input" type="number" min=0 placeholder="0">
       </div>
-      <p id="tip-label" class="label">Select Tip %</p>
+      <p id="tip-label" class="label">Select Tip %<span id="tip-error-message" class="error-message">Not valid</span></p>
       <div id="tip-block"> 
         <span class="tip-rate">5%</span><span class="tip-rate">10%</span><span class="tip-rate">15%</span>
         <span class="tip-rate">25%</span><span class="tip-rate">50%</span>
@@ -31,7 +31,7 @@
       </div>
 
       <div id="number-of-people-block" >
-        <p id="number-of-people-label" class="label">Number of People<span id="error-message">Can't be zero</span></p>
+        <p id="number-of-people-label" class="label">Number of People<span id="people-error-message" class="error-message">Can't be zero</span></p>
         <input id="number-of-people-input" name="number-of-people-input" type="number" min="0" placeholder="0">
       </div>
 
