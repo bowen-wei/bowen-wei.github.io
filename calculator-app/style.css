@@ -20,6 +20,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 
 main {
@@ -201,7 +202,7 @@ main > * {
     }
 
     .display-section #output {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .button-section {
