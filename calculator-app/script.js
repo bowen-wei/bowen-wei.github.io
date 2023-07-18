@@ -22,7 +22,7 @@ function inputUpdate(e) {
     /*if you pressed a number*/
     if(buttonPressed.id <= '9' && buttonPressed.id >= '0') {
         console.log("you pressed a number")
-        if(currentInput.length >= 10) return
+        if(currentInput.length >= 13) return
         if(currentOperator === "") {result = ""}
         if(buttonPressed.id === '0' && currentInput === "0") return
         else if(buttonPressed.id !== '0' && currentInput === "0")
@@ -107,8 +107,8 @@ function expo(x, f) {
 
 function showResult() {
     var displayString = ""
-    if(String(result).length > 10) {
-        displayString = expo(result, 6)
+    if(String(result).length > 14) {
+        displayString = expo(result, 8)
         outputDisplay.innerText = displayString
     }
     else { updateDisplay(result)}
