@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import google font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+    </style>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- scripts -->
+    <script src="nav.js" defer></script>
+    <script src="about.js" defer></script>
+    <title>About</title>
+  </head>
+
+  <body class="contact">
+    <!-- header begins -->
+    <header class="bg-primary-green">
+      <div class="nav-bar">
+        <img class="logo" src="assets/logo.svg" />
+        <div class="toggle-button">
+          <input type="checkbox" />
+          <img src="assets/icon-hamburger.svg" />
+        </div>
+        <nav class="body-1">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+          </ul>
+          <button class="primary-light-button">
+            <a href="contact.html">contact us</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- contact section begins -->
+    <section class="contact-section bg-primary-green">
+      <div class="intro">
+        <h1 class="h1-small text-white" style="line-height: 100px">Contact</h1>
+        <h2 class="h2 text-primary-red">Ask us about</h2>
+        <article>
+          <div>
+            <img src="assets/icon-person.svg" alt="person" />
+            <p class="body-1 text-white">The quality of our talent network</p>
+          </div>
+          <div>
+            <img src="assets/icon-cog.svg" alt="cog" />
+            <p class="body-1 text-white">
+              Usage & implementation of our software
+            </p>
+          </div>
+          <div>
+            <img src="assets/icon-chart.svg" alt="chart" />
+            <p class="body-1 text-white">How we help drive innovation</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- contact form -->
+      <form action="" id="contact-form">
+        <input
+          type="text"
+          name="name"
+          class="text-field"
+          placeholder="Name"
+          required=""
+        />
+        <input
+          type="email"
+          name="email"
+          class="text-field"
+          placeholder="Email address"
+        />
+        <input
+          type="text"
+          name="company"
+          class="text-field"
+          placeholder="Company name"
+        />
+        <input
+          type="text"
+          name="title"
+          class="text-field"
+          placeholder="Title"
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          class="text-area body-2 text-white"
+          rows="4"
+        ></textarea>
+        <button class="secondary-light-button body-1">submit</button>
+      </form>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer begins -->
+    <footer class="footer bg-green-3">
+      <div class="footer-nav">
+        <img class="logo" src="assets/logo.svg" alt="logo" />
+        <ul>
+          <li><a class="body-1" href="index.html">home</a></li>
+          <li><a class="body-1" href="about.html">about</a></li>
+        </ul>
+      </div>
+      <ul class="address">
+        <li>987 Hillcrest Lane</li>
+        <li>Irvine, CA</li>
+        <li>California 92714</li>
+        <li>Call Us : 949-833-7432</li>
+      </ul>
+      <div class="social-media">
+        <a href="http://www.facebook.com" target="_blank"
+          ><img src="assets/icon-facebook.svg" alt="facebook"
+        /></a>
+        <a href="http://www.pinterest.com" target="_blank">
+          <img src="assets/icon-pinterest.svg" alt="pinterest"
+        /></a>
+        <a href="http://www.twitter.com" target="_blank">
+          <img src="assets/icon-twitter.svg" alt="twitter"
+        /></a>
+      </div>
+      <p class="body-2 copyright">Copyright 2020. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
