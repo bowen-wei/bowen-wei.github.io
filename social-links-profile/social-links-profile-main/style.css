@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --primary-green: hsl(75, 94%, 57%);
+  --gray: hsl(0, 0%, 20%);
+  --dark-gray: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --fs-p: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+body {
+  background: var(--off-black);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  background: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid white; */
+  padding: 2.5rem;
+  width: 24rem;
+  border-radius: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* infos */
+.infos {
+  /* border: 1px solid red; */
+  color: white;
+  text-align: center;
+}
+
+.infos > * {
+  margin-bottom: 2rem;
+}
+
+#avatar {
+  border-radius: 50%;
+  /* transform: scale(0.75); */
+  width: 6rem;
+}
+
+#name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#location {
+  color: var(--primary-green);
+  font-weight: 600;
+  font-size: var(--fs-p);
+}
+
+#description {
+  font-size: var(--fs-p);
+}
+
+/* links */
+ul {
+  /* border: 1px solid green; */
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  color: white;
+  font-size: var(--fs-p);
+  font-weight: 700;
+  text-align: center;
+  background: var(--gray);
+  padding-block: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+li:hover {
+  color: var(--off-black);
+  background: var(--primary-green);
+}
+
+li:not(:last-child) {
+  margin-bottom: 1rem;
+}
