@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --p-color: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--light-gray);
+}
+
+main.container {
+  max-width: 1000px;
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.bg-cyan {
+  background-color: var(--cyan);
+}
+
+.text-cyan {
+  color: var(--cyan);
+}
+
+.bg-dark-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.text-dark-cyan {
+  color: var(--dark-cyan);
+}
+
+.card {
+  height: 500px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--light-gray);
+  font-size: 2.5rem !important;
+}
+
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--p-color);
+}
+
+.card button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--light-gray);
+  border: 2px solid transparent;
+  padding: 12px 2rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.card button:hover {
+  color: var(--light-gray);
+  background: transparent;
+  border: 2px solid var(--light-gray);
+}
+
+.row .card:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.row .card:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.row > * {
+  transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+}
+
+.row:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+.row > .card:hover {
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 0.25rem !important;
+}
+
+@media (width < 960px) {
+  main.container {
+    margin-block: 4rem;
+    margin-inline: max(1rem, 6%);
+    max-width: fit-content;
+  }
+
+  .card {
+    height: 440px;
+  }
+
+  .card h2 {
+    font-size: 2rem !important;
+  }
+
+  .card button:focus {
+    color: var(--light-gray);
+    background: transparent;
+    border: 2px solid var(--light-gray);
+  }
+
+  .row .card:first-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+  }
+
+  .row .card:last-child {
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+  }
+}
