@@ -86,8 +86,15 @@ main.container {
   border-bottom-left-radius: 0;
 }
 
+/*hover animation*/
+
+.row {
+  visibility: hidden;
+}
+
 .row > * {
   transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+  visibility: visible;
 }
 
 .row:hover > * {
